@@ -28,7 +28,7 @@ resource "google_compute_instance" "my_vm" {
   	]
 
     name         = "my-vm-name"
-    machine_type = "e2-small"
+    machine_type = var.vm_spec
     zone = var.zone
 
     boot_disk {

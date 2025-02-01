@@ -32,6 +32,11 @@ variable "ssh_key_dir" {
     description     = "ssh key directory"
 }
 
+variable "vm_spec" {
+    type        = string
+    default     = "e2-small" # 저렴한 옵션
+}
+
 variable "db_username" {
     type        = string
 }
